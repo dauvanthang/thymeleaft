@@ -21,9 +21,9 @@ public class UserController {
 	private UserService userService;
 	
 	@RequestMapping("/new")
-	public String showNewProductPage(Model model) {
-		User product = new User();
-		model.addAttribute("user", product);
+	public String showNewUserPage(Model model) {
+		User user = new User();
+		model.addAttribute("user", user);
 		
 		return "new_user";
 	}
@@ -31,7 +31,7 @@ public class UserController {
 	
 
 	@RequestMapping(value = "/add", method = RequestMethod.POST)
-	public String saveProduct(@ModelAttribute("product") User user) {
+	public String saveProduct(@ModelAttribute("user") User user) {
 		userService.save(user);
 		
 		return "redirect:/all";
