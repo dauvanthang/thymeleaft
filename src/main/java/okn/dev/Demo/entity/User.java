@@ -14,6 +14,8 @@ public class User {
     private String name;
 
     private String email;
+    
+    private int maVung;
 
 	public Integer getId() {
 		return id;
@@ -37,6 +39,14 @@ public class User {
 
 	public void setEmail(String email) {
 		this.email = email;
+	}
+
+	public int getMaVung() {
+		return maVung;
+	}
+
+	public void setMaVung(int maVung) {
+		this.maVung = maVung;
 	}
 
 

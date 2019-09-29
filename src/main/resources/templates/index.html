@@ -16,6 +16,7 @@
                 <th>User ID</th>
                 <th>User Name</th>
                 <th>Email</th>
+                <th>Ma Vung</th>
             </tr>
         </thead>
         <tbody>
@@ -23,6 +24,7 @@
             	<td th:text="${user.id}">User ID</td>
                 <td th:text="${user.name}">User Name</td>
                 <td th:text="${user.email}">Email</td>
+                <td th:text="${user.maVung}">Ma Vung</td>
                 <td>
                 	<a th:href="@{'/edit/' + ${user.id}}">Edit</a>
                 	&nbsp;&nbsp;&nbsp;

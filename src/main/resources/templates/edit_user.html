@@ -29,6 +29,16 @@
 					<td>Email:</td>
 					<td><input type="text" th:field="*{email}" /></td>
 				</tr>
+				
+				<tr>
+					<td>Ma Vung:</td>
+					<td><select th:field="*{maVung}">
+							<option th:each="destination : ${listDestinations}"
+								th:value="${destination.maVung}" th:text="${destination.tenVung}">
+							</option>
+					</select></td>
+				</tr>
+				
 				<tr>
 					<td colspan="2"><button type="submit">Save</button> </td>
 				</tr>
